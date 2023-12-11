@@ -2,6 +2,9 @@ import React, { useRef } from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import emailjs from '@emailjs/browser';
 import swal from "sweetalert";
+import { MdOutlineEmail } from "react-icons/md";
+import { FaGithub, FaPhoneAlt } from "react-icons/fa";
+import { TiSocialFacebook, TiSocialLinkedin } from "react-icons/ti";
 
 const Contact = () => {
 
@@ -42,19 +45,29 @@ const Contact = () => {
     };
   
   return (
-    <div className="border-t-2 border-b-2 border-[#03045E] py-8">
+    <div id="contact" className="border-t-2 border-b-2 border-[#03045E] py-12 space-y-8">
       <h1 className="text-8xl flex items-center text-[#8f8b54] font-medium ">
         Contact <IoIosArrowRoundForward className="text-8xl" />
       </h1>
       <div className="hero min-h-[calc(100vh-120px)] bg-transparent backdrop-blur-2xl  ">
-        <div className="hero-content flex-col lg:flex-row-reverse gap-3">
-          <div className="text-center lg:text-left">
-            <h1 className="text-5xl text-center text-[#03045E] font-bold">Les’t talk on something great together!</h1>
-            <p className="py-6">
-            
+        <div className="hero-content flex-col lg:flex-row-reverse gap-12">
+          <div className=" text-center flex flex-col gap-6 md:text-center lg:text-left justify-between h-full">
+            <h1 className="text-5xl text-center lg:text-left text-[#03045E] font-bold border-b-2 pb-6 border-[#03045E]">Les’t talk on something great together!</h1>
+           {/* <div className="flex gap-6 items-left justify-left flex-col"> */}
+           <p className=" flex text-center md:text-left items-center gap-3 text-[#03045E] font-semibold justify-center lg:justify-start">
+             <MdOutlineEmail/> mdarifulislam1077@gmail.com
             </p>
+            <p className=" flex items-center gap-3 text-[#03045E] font-semibold justify-center lg:justify-start">
+             <FaPhoneAlt/> +01843419177
+            </p>
+           {/* </div> */}
+           <div className=" text-[#03045E] text-2xl flex items-center justify-center lg:justify-start">
+    <a><TiSocialFacebook/></a>
+    <a><TiSocialLinkedin/></a>
+    <a><FaGithub/></a>
+  </div>
           </div>
-          <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-gradient-to-r  from-[#13192d] to-[#1c2d5f]">
+          <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-gradient-to-r h-full  from-[#13192d] to-[#1c2d5f]">
             <form ref={form} onSubmit={sendEmail} className="card-body text-white">
               <div className="form-control text-white">
                 <label className="label">

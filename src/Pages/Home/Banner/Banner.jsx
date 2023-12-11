@@ -29,10 +29,10 @@ const Banner = () => {
       };
 
     return (
-        <div className='h-[calc(100vh-64px)] flex items-center justify-center py-8 border-t-2 border-b-2 border-[#03045E] '>
-            <div className="flex-1 space-y-4">
+        <div className='xl:h-[calc(100vh-64px)] flex flex-col-reverse md:flex-row items-center justify-center py-8 border-b-2 border-[#03045E] '>
+            <div className="flex-1 text-center md:text-left md:px-0 space-y-4">
                 <p className='text-[#03045E] font-medium'>Hello, I'm Ariful Islam,</p>
-                <h1 className='text-8xl font-bold leading-[100px] text-[#03045E]'>Web Developer</h1>
+                <h1 className='text-6xl md:text-6xl lg:text-8xl xl:text-8xl font-bold leading-[100px] text-[#03045E]'>Web Developer</h1>
                 <p className='text-[#03045E] font-medium'>Transforming Ideas into Digital Realities with Innovation and Precision.</p>
                 <AwesomeButton cssModule={'aws'} type="secondary"><a onClick={downloadResume}>Resume</a></AwesomeButton>
             </div>
