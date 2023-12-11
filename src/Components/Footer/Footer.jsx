@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <div className="bg-black h-full py-24">
       <Container>
-        <footer className="footer flex items-center justify-center text-neutral-content">
-          <aside className="flex-1 text-xl font-thin">
+        <footer className="footer flex flex-col md:flex-row items-center justify-center text-neutral-content">
+          <aside className="flex-1 text-xl text-center md:text-left font-thin">
             <p>
               <span className="uppercase text-4xl font-semibold">
                 Ariful Islam

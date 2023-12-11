@@ -13,6 +13,7 @@ const Contact = () => {
     const sendEmail = (e) => {
       e.preventDefault();
 
+
       swal({
         title: "Are you sure?",
         text: "Once clicked, you message will send as email to Ariful Islam!",
@@ -53,18 +54,24 @@ const Contact = () => {
         <div className="hero-content flex-col lg:flex-row-reverse gap-12">
           <div className=" text-center flex flex-col gap-6 md:text-center lg:text-left justify-between h-full">
             <h1 className="text-5xl text-center lg:text-left text-[#03045E] font-bold border-b-2 pb-6 border-[#03045E]">Les’t talk on something great together!</h1>
-           {/* <div className="flex gap-6 items-left justify-left flex-col"> */}
+          
            <p className=" flex text-center md:text-left items-center gap-3 text-[#03045E] font-semibold justify-center lg:justify-start">
              <MdOutlineEmail/> mdarifulislam1077@gmail.com
             </p>
             <p className=" flex items-center gap-3 text-[#03045E] font-semibold justify-center lg:justify-start">
              <FaPhoneAlt/> +01843419177
             </p>
-           {/* </div> */}
-           <div className=" text-[#03045E] text-2xl flex items-center justify-center lg:justify-start">
-    <a><TiSocialFacebook/></a>
-    <a><TiSocialLinkedin/></a>
-    <a><FaGithub/></a>
+           
+           <div className=" text-[#03045E] text-2xl flex items-center gap-4 justify-center lg:justify-start">
+           <a href="https://web.facebook.com/mdarifulislam.shanto.96/">
+                <TiSocialFacebook />
+              </a>
+              <a href="https://www.linkedin.com/in/ariful-islam-1631a72a3/">
+                <TiSocialLinkedin />
+              </a>
+              <a href="https://github.com/Ariful-Islam-Shanto">
+                <FaGithub />
+              </a>
   </div>
           </div>
           <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-gradient-to-r h-full  from-[#13192d] to-[#1c2d5f]">

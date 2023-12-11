@@ -26,7 +26,7 @@ const Project = () => {
         backgroundSize : 'cover'
     }
   return (
-    <div style={bg} id="projects" className="py-12 ">
+    <div style={bg} id="work" className="py-12 ">
       
       <Container>
       <h1 className="text-8xl pb-8 flex text-[#8f8b54] font-medium ">

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Card = ({image, title, description, liveLink}) => {
     return (
         <div>
-            <div className="bg-gradient-to-r h-full  from-[#1c2d5f] rounded-tr- rounded-tl-2xl rounded-bl-2xl rounded-br-2xl to-[#252a3c] flex items-center justify-between shadow-xl">
+            <div className="bg-gradient-to-r h-full  from-[#1c2d5f] rounded-tr- rounded-tl-2xl rounded-bl-2xl rounded-br-2xl to-[#252a3c] flex flex-col md:flex-row items-center justify-between shadow-xl">
           <figure className="px-10 pt-10">
             <img
               src={image}

@@ -51,7 +51,7 @@ const About = () => {
       
         <div className="w-full flex items-center justify-center">
         <svg className=" text-center text-6xl text-black">
-        <a href="#projects">
+        <a href="#work">
           <IoIosArrowRoundDown/>
       </a>
         </svg>
