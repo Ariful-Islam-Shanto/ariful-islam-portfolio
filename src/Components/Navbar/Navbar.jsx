@@ -1,11 +1,14 @@
 import React from 'react';
+import { TiSocialFacebook } from "react-icons/ti";
+import { TiSocialLinkedin } from "react-icons/ti";
+import { FaGithub } from "react-icons/fa";
 
 const Navbar = () => {
 
     const navlinks = <>
       <li><a>Home</a></li>
       <li>
-        <a>About</a>
+        <a href='#about'>About</a>
       </li>
       <li><a>Work</a></li>
     </>
@@ -20,15 +23,17 @@ const Navbar = () => {
         {navlinks}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl font-medium text-[#03045E]">Ariful Islam</a>
+    <a className="btn btn-ghost text-xl font-med text-[#03045E]">Ariful Islam</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu text-[#03045E] menu-horizontal px-1">
       {navlinks}
     </ul>
   </div>
-  <div className="navbar-end">
-    <a className="btn">Button</a>
+  <div className="navbar-end text-[#03045E] text-2xl flex gap-4">
+    <a><TiSocialFacebook/></a>
+    <a><TiSocialLinkedin/></a>
+    <a><FaGithub/></a>
   </div>
 </div>
     );
