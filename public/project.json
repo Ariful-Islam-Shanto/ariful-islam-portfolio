@@ -1,0 +1,27 @@
+[
+    {
+      "image": "https://i.postimg.cc/rpfWb9Fk/cover-2.jpg",
+      "title": "Click Dwells",
+      "description": "Click Dwells, a comprehensive solution for buying, selling, and managing real estate properties. The platform caters to three main roles: User, Agent, and Admin.",
+      "overview": "Click Dwells is a sophisticated web platform redefining the property marketplace experience. Whether you are a user seeking your dream property, an agent managing listings, or an admin overseeing the entire operation, Click Dwells offers an extensive set of features to streamline property transactions and create a seamless user experience.",
+      "liveLink": "https://example.com/click-dwells",
+      "gitLink": "https://github.com/yourusername/click-dwells"
+    },
+    {
+      "image": "https://i.postimg.cc/rmVm6dw2/Mac-Book-Pro-15-Mockup-1.png",
+      "title": "Fusion Hub",
+      "description": "Fusion Hub is an exciting fashion and apparel e-commerce website that brings together six renowned brands in one stylish platform. To explore the latest fashion trends, shop for your favorite products, and enjoy a seamless shopping experience.",
+      "overview": "Fusion Hub is a dynamic fashion and apparel e-commerce website that curates an unparalleled shopping experience by bringing together six prestigious brands in one stylish platform. Dive into the world of fashion, explore the latest trends, and shop with ease, all in one place.",
+      "liveLink": "https://example.com/fusion-hub",
+      "gitLink": "https://github.com/yourusername/fusion-hub"
+    },
+    {
+      "image": "https://i.postimg.cc/vT7hjV1w/cover-1.jpg",
+      "title": "Job Wave",
+      "description": "Job Wave is a web-based platform designed to streamline the job search, application, and posting process. It offers a user-friendly interface with a range of features to assist job seekers and employers. This README provides an overview of the project's key functionalities.",
+      "overview": "Job Wave is a dynamic web platform meticulously crafted to revolutionize the job search, application, and recruitment process. Aimed at providing a seamless experience for both job seekers and employers, Job Wave encompasses a user-friendly interface and a rich set of features that enhance engagement and efficiency throughout the hiring journey.",
+      "liveLink": "https://example.com/job-wave",
+      "gitLink": "https://github.com/yourusername/job-wave"
+    }
+  ]
+  

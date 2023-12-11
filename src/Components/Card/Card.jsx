@@ -2,6 +2,7 @@ import React from 'react';
 import { AwesomeButton } from 'react-awesome-button';
 import { IoMdArrowDropright, IoMdArrowDroprightCircle } from 'react-icons/io';
 import { FaArrowTrendDown } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 const Card = ({image, title, description, liveLink}) => {
     return (
@@ -19,7 +20,9 @@ const Card = ({image, title, description, liveLink}) => {
             <p className='font-thin text-gray-400 tracking-wider leading-[30px]'>{description}</p>
             <div className="card-actions">
               {/* <button className="btn">See Project</button> */}
+              <Link to={`/details/${title}`}>
               <AwesomeButton className='' cssModule={'aws'} type="primary">See Project <FaArrowTrendDown className='ml-2'/></AwesomeButton>
+              </Link>
             </div>
           </div>
         </div>

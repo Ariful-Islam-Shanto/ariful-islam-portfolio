@@ -2,16 +2,26 @@ import React from 'react';
 import { TiSocialFacebook } from "react-icons/ti";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { FaGithub } from "react-icons/fa";
+import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
+    const location = useLocation();
 
     const navlinks = <>
-      <li><a href=''>Home</a></li>
-      <li>
-        <a href='#about'>About</a>
-      </li>
-      <li><a href='#contact'>Work</a></li>
-    </>
+      <li><a href='/'>Home</a></li>
+      {location.pathname.startsWith('/details/') ? (
+        <></>
+      ) : (
+        <>
+          <li>
+            <a href='#about'>About</a>
+          </li>
+          <li>
+            <a href='#contact'>Work</a>
+          </li>
+        </>
+      )}
+      </>
     return (
         <div className="navbar hover:bg-blue-400 hover:text-white rounded-lg border-b-4 border-[#03045E] ">
   <div className="navbar-start">

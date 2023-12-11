@@ -8,12 +8,14 @@ import Project from "./My Projects/Project";
 
 const Home = () => {
   return (
-    <div className="">
+    <div className="bg-[#FBF8CC]">
       <Container>
         <Navbar />
         <Banner />
         <About/>
-        <Project/>
+      </Container>
+      <Project/>
+      <Container>
         <Contact/>
       </Container>
     </div>
