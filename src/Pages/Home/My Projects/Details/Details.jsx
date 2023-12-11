@@ -39,7 +39,7 @@ const Details = () => {
         <p className="text-2xl text-center font-thin">
           This page holds the {project[0]?.description} details.
         </p>
-        <AwesomeButton type="secondary">Live Site</AwesomeButton>
+        <AwesomeButton type="secondary"><a href={project[0]?.liveLink}>Live site</a></AwesomeButton>
         <div className="w-full flex items-center justify-center">
           <svg className=" text-center text-6xl text-black">
             <a href="#details">
@@ -66,10 +66,9 @@ const Details = () => {
                 {project[0]?.overview}
               </p>
               <div className="card-actions">
-                {/* <button className="btn">See Project</button> */}
                
                   <AwesomeButton className="" cssModule={"aws"} type="primary">
-                    Live Site <FaArrowTrendDown className="ml-2" />
+                  <a href={project[0]?.liveLink}>Live site</a> <FaArrowTrendDown className="ml-2" />
                   </AwesomeButton>
                
                <Link to={'/'}>

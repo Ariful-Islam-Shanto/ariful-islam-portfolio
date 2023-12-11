@@ -41,9 +41,9 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end text-[#03045E] text-2xl flex gap-4">
-    <a><TiSocialFacebook/></a>
-    <a><TiSocialLinkedin/></a>
-    <a><FaGithub/></a>
+    <a href='https://web.facebook.com/mdarifulislam.shanto.96/'><TiSocialFacebook/></a>
+    <a href='https://www.linkedin.com/in/ariful-islam-1631a72a3/'><TiSocialLinkedin/></a>
+    <a href='https://github.com/Ariful-Islam-Shanto'><FaGithub/></a>
   </div>
 </div>
     );
