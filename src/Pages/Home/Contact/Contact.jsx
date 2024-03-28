@@ -5,6 +5,8 @@ import swal from "sweetalert";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaGithub, FaPhoneAlt } from "react-icons/fa";
 import { TiSocialFacebook, TiSocialLinkedin } from "react-icons/ti";
+import Lottie from "lottie-react";
+import ContactLottie from '../../../assets/Animation - 1702498609381.json';
 
 const Contact = () => {
 
@@ -46,15 +48,19 @@ const Contact = () => {
     };
   
   return (
-    <div id="contact" className="border-t-2 border-b-2 border-[#03045E] py-12 space-y-8">
+    <div id="contact" className="border-t-2 border-b-2 border-[#03045E] py-12 space-y-8 w-full">
       <h1 className="text-8xl flex items-center text-[#8f8b54] font-medium ">
         Contact <IoIosArrowRoundForward className="text-8xl" />
       </h1>
       <div className="hero min-h-[calc(100vh-120px)] bg-transparent backdrop-blur-2xl  ">
-        <div className="hero-content flex-col lg:flex-row-reverse gap-12">
-          <div className=" text-center flex flex-col gap-6 md:text-center lg:text-left justify-between h-full">
+        <div className="flex flex-col items-center lg:items-start lg:flex-row-reverse gap-12 w-full">
+          <div className=" text-center flex flex-col gap-6 md:text-center lg:text-left justify-between  h-full">
             <h1 className="text-5xl text-center lg:text-left text-[#03045E] font-bold border-b-2 pb-6 border-[#03045E]">Les’t talk on something great together!</h1>
           
+          <div className="h-full">
+          <Lottie animationData={ContactLottie} loop={true} />;
+
+          </div>
            <p className=" flex text-center md:text-left items-center gap-3 text-[#03045E] font-semibold justify-center lg:justify-start">
              <MdOutlineEmail/> mdarifulislam1077@gmail.com
             </p>

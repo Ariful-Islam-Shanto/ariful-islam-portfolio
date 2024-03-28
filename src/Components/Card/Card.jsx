@@ -3,11 +3,14 @@ import { AwesomeButton } from 'react-awesome-button';
 import { IoMdArrowDropright, IoMdArrowDroprightCircle } from 'react-icons/io';
 import { FaArrowTrendDown } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
+import Aos from 'aos';
 
 const Card = ({image, title, description, liveLink}) => {
+    Aos.init();
     return (
-        <div>
-            <div className="bg-gradient-to-r h-full  from-[#1c2d5f] rounded-tr- rounded-tl-2xl rounded-bl-2xl rounded-br-2xl to-[#252a3c] flex flex-col md:flex-row items-center justify-between shadow-xl">
+        <div data-aos="fade-up"
+     className=''>
+            <div className="bg-gradient-to-r h-full  from-[#1c2d5f] rounded-tr- rounded-tl-2xl rounded-bl-2xl rounded-br-2xl to-[#252a3c] flex flex-col lg:flex-row items-center justify-between shadow-xl">
           <figure className="px-10 pt-10">
             <img
               src={image}

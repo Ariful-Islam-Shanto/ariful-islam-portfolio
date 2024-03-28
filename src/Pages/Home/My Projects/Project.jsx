@@ -13,7 +13,7 @@ const Project = () => {
   
 
   useEffect(() => {
-    fetch("../../../../../public/project.json")
+    fetch("/project.json")
       .then((res) => res.json())
       .then((data) => {
         setProjects(data);
@@ -26,24 +26,25 @@ const Project = () => {
         backgroundSize : 'cover'
     }
   return (
-    <div style={bg} id="work" className="py-12 ">
+    <div style={bg} id="work" className="py-12 overflow-hidden">
       
       <Container>
       <h1 className="text-8xl pb-8 flex text-[#8f8b54] font-medium ">
         Projects <IoIosArrowRoundForward className="" />
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-1 gap-12 ">
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-12 overflow-hidden">
   
 
         {
             projects?.map((project, idx) => 
-            
-            <Card key={idx}
-             image={project?.image}
-             title={project?.title}
-             description={project?.description}
-    
-            />
+            <div  key={idx} className="">
+                <Card  
+                 image={project?.image}
+                 title={project?.title}
+                 description={project?.description}
+        
+                />
+            </div>
             )
         }
        

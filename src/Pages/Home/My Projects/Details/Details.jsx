@@ -13,7 +13,7 @@ const Details = () => {
   console.log(name);
 
   useEffect(() => {
-    fetch("../../../../../public/project.json")
+    fetch("/project.json")
       .then((res) => res.json())
       .then((data) => {
         const newData = data.filter((project) => project.title === name);

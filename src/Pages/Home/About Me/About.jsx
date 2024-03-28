@@ -9,11 +9,16 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { RiJavascriptFill } from "react-icons/ri";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "gsap";
 
 const About = () => {
+ 
+
+
   return (
     <div id="about" className="py-12  space-y-12">
-      <h1 className="text-8xl flex text-[#8f8b54] font-medium ">
+      <h1 className=" text-8xl flex text-[#8f8b54] font-medium ">
         About <IoIosArrowRoundForward className="" />
       </h1>
       <div className="flex flex-col-reverse gap-6">
